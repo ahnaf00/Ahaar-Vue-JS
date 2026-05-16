@@ -8,6 +8,7 @@ import AboutView from '../views/public/AboutView.vue'
 import ImpactView from '../views/public/ImpactView.vue'
 import GalleryView from '../views/public/GalleryView.vue'
 import ReservationsView from '../views/public/ReservationsView.vue'
+import ContactView from '../views/public/ContactView.vue'
 const routes = [
     // ── Public Routes (Wrapped in Layout) ──────────────────────
     {
@@ -21,7 +22,7 @@ const routes = [
             { path: 'impact',       name: 'impact',       component: ImpactView       },
             { path: 'gallery',      name: 'gallery',      component: GalleryView      },
             { path: 'reservations', name: 'reservations', component: ReservationsView },
-            // { path: 'contact',      name: 'contact',      component: ContactView      },
+            { path: 'contact',      name: 'contact',      component: ContactView      },
         ]
     },
 

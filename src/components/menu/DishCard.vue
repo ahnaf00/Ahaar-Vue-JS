@@ -42,7 +42,7 @@ defineProps({
                     </span>
                 </div>
 
-                <RouterLink :to="`/menu/${dish.slug}`" class="flex items-center gap-2 text-forest-800 font-bold text-sm
+                <RouterLink :to="`/dish/${dish.slug}`" class="flex items-center gap-2 text-forest-800 font-bold text-sm
                  hover:text-gold-500 transition-colors">
                     Customize
                     <i class="fas fa-chevron-right text-[10px]"></i>

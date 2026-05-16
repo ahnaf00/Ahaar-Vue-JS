@@ -24,7 +24,7 @@
                     <router-link to="/"  class="nav-link text-forest-800 font-semibold text-sm tracking-wide">Home</router-link>
                     <router-link to="/menu" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Menu</router-link>
                     <router-link to="/about" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">About</router-link>
-                    <router-link class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Impact</router-link>
+                    <router-link to="/impact" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Impact</router-link>
                     <router-link class="btn-primary bg-gold-400 hover:bg-gold-500 text-forest-900 px-6 py-2.5 rounded-xl font-bold text-sm">Book a Table</router-link>
                     <!-- </a> -->
                 </div>

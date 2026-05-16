@@ -5,6 +5,7 @@ import HomeView from '../views/public/HomeView.vue'
 import MenuView from '../views/public/MenuView.vue'
 import DishDetailView from '../views/public/DishDetailView.vue'
 import AboutView from '../views/public/AboutView.vue'
+import ImpactView from '../views/public/ImpactView.vue'
 const routes = [
     // ── Public Routes (Wrapped in Layout) ──────────────────────
     {
@@ -15,7 +16,7 @@ const routes = [
             { path: 'menu',         name: 'menu',         component: MenuView         },
             { path: 'dish/:slug',   name: 'dish',         component:DishDetailView    },
             { path: 'about',        name: 'about',        component: AboutView        },
-            // { path: 'impact',       name: 'impact',       component: ImpactView       },
+            { path: 'impact',       name: 'impact',       component: ImpactView       },
             // { path: 'gallery',      name: 'gallery',      component: GalleryView      },
             // { path: 'reservations', name: 'reservations', component: ReservationsView },
             // { path: 'contact',      name: 'contact',      component: ContactView      },

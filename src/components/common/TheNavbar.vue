@@ -25,6 +25,7 @@
                     <router-link to="/menu" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Menu</router-link>
                     <router-link to="/about" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">About</router-link>
                     <router-link to="/impact" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Impact</router-link>
+                    <router-link to="/gallery" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Gallery</router-link>
                     <router-link class="btn-primary bg-gold-400 hover:bg-gold-500 text-forest-900 px-6 py-2.5 rounded-xl font-bold text-sm">Book a Table</router-link>
                     <!-- </a> -->
                 </div>
@@ -40,9 +41,9 @@
             <router-link to="/" class="block font-semibold text-forest-800">Home</router-link>
             <router-link to="/menu" class="block text-gray-600">Menu</router-link>
             <router-link to="/about" class="block text-gray-600">About</router-link>
-            <router-link class="block text-gray-600">Impact</router-link>
-            <router-link
-                class="block bg-gold-400 text-forest-900 text-center py-3 rounded-xl font-bold">Book a Table</router-link>
+            <router-link to="/impact" class="block text-gray-600">Impact</router-link>
+            <router-link to="/gallery" class="block text-gray-600">Gallery</router-link>
+            <router-link class="block bg-gold-400 text-forest-900 text-center py-3 rounded-xl font-bold">Book a Table</router-link>
         </div>
     </nav>
 </template>

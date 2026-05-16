@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import DefaultLayout from '../layouts/DefaultLayout.vue'
 import HomeView from '../views/public/HomeView.vue'
+import MenuView from '../views/public/MenuView.vue'
 const routes = [
     // ── Public Routes (Wrapped in Layout) ──────────────────────
     {
@@ -9,7 +10,7 @@ const routes = [
         component: DefaultLayout,
         children: [
             { path: '',             name: 'home',         component: HomeView         },
-            // { path: 'menu',         name: 'menu',         component: MenuView         },
+            { path: 'menu',         name: 'menu',         component: MenuView         },
             // { path: 'about',        name: 'about',        component: AboutView        },
             // { path: 'impact',       name: 'impact',       component: ImpactView       },
             // { path: 'gallery',      name: 'gallery',      component: GalleryView      },

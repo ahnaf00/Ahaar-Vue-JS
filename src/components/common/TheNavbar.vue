@@ -21,14 +21,16 @@
                 </a>
 
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="home.html">Home</a>
-                    <router-link to=""  class="nav-link text-forest-800 font-semibold text-sm tracking-wide">Home</router-link>
-                    <a href="menu.html" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Menu</a>
-                    <a href="about.html" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">About</a>
-                    <a href="impact.html" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Impact</a>
-                    <a href="reservations.html" class="btn-primary bg-gold-400 hover:bg-gold-500 text-forest-900 px-6 py-2.5 rounded-xl font-bold text-sm">
-                        Book a Table
-                    </a>
+                    <router-link to="home"  class="nav-link text-forest-800 font-semibold text-sm tracking-wide">Home</router-link>
+                    <!-- <a href="menu.html">Menu</a> -->
+                    <router-link to="menu" class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Menu</router-link>
+                    <!-- <a href="about.html">About</a> -->
+                     <router-link class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">About</router-link>
+                    <!-- <a href="impact.html" >Impact</a> -->
+                    <router-link class="nav-link text-gray-600 hover:text-forest-800 font-medium text-sm tracking-wide">Impact</router-link>
+                    <!-- <a href="reservations.html"> -->
+                       <router-link class="btn-primary bg-gold-400 hover:bg-gold-500 text-forest-900 px-6 py-2.5 rounded-xl font-bold text-sm">Book a Table</router-link>
+                    <!-- </a> -->
                 </div>
 
                 <button id="mobileMenuBtn" class="md:hidden p-2 text-forest-800">

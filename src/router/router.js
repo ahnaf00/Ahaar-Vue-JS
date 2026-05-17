@@ -14,6 +14,7 @@ import AdminLayout from "../layouts/AdminLayout.vue";
 import AdminOrdersView from "../views/admin/AdminOrdersView.vue";
 import AdminReservationsView from "../views/admin/AdminReservationsView.vue";
 import AdminMenuView from "../views/admin/AdminMenuView.vue";
+import AdminImpactView from "../views/admin/AdminImpactView.vue";
 const routes = [
   // ── Public Routes (Wrapped in Layout) ──────────────────────
   {
@@ -65,12 +66,12 @@ const routes = [
         component: AdminMenuView,
         meta: { title: "Menu Manager" },
       },
-    //   {
-    //     path: "impact",
-    //     name: "admin-impact",
-    //     component: AdminImpactView,
-    //     meta: { title: "Impact Tracker" },
-    //   },
+      {
+        path: "impact",
+        name: "admin-impact",
+        component: AdminImpactView,
+        meta: { title: "Impact Tracker" },
+      },
     ],
   },
 

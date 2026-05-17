@@ -12,6 +12,7 @@ import ContactView from "../views/public/ContactView.vue";
 import AdminDashboardView from "../views/admin/AdminDashboardView.vue";
 import AdminLayout from "../layouts/AdminLayout.vue";
 import AdminOrdersView from "../views/admin/AdminOrdersView.vue";
+import AdminReservationsView from "../views/admin/AdminReservationsView.vue";
 const routes = [
   // ── Public Routes (Wrapped in Layout) ──────────────────────
   {
@@ -51,12 +52,12 @@ const routes = [
         component: AdminOrdersView,
         meta: { title: "Orders" },
       },
-    //   {
-    //     path: "reservations",
-    //     name: "admin-reservations",
-    //     component: AdminReservationsView,
-    //     meta: { title: "Reservations" },
-    //   },
+      {
+        path: "reservations",
+        name: "admin-reservations",
+        component: AdminReservationsView,
+        meta: { title: "Reservations" },
+      },
     //   {
     //     path: "menu",
     //     name: "admin-menu",

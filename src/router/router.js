@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { requiresAuth } from "./guards";
+import AdminLoginView from "../views/admin/AdminLoginView.vue";
 
 import DefaultLayout from "../layouts/DefaultLayout.vue";
 import HomeView from "../views/public/HomeView.vue";
@@ -34,6 +36,14 @@ const routes = [
       },
       { path: "contact", name: "contact", component: ContactView },
     ],
+  },
+
+  // ── Admin Login (no auth required) ─────────────────────────
+  {
+    path: "/admin-login",
+    name: "AdminLogin",
+    component: AdminLoginView,
+    meta: { title: "Admin Login" },
   },
 
   // ── Admin Routes (wrapped in AdminLayout) ───────────────────
@@ -85,11 +95,12 @@ const router = createRouter({
 });
 
 // ── Navigation Guard ──────────────────────────────────────────
+import { useAuthStore } from '../stores/auth'
 router.beforeEach((to) => {
   if (to.meta.requiresAuth) {
-    const isAuthenticated = true // replace with Pinia auth store check
-    if (!isAuthenticated) {
-      return { name: 'home' }
+    const auth = useAuthStore()
+    if (!auth.isAuthenticated) {
+      return { name: 'AdminLogin', query: { redirect: to.fullPath } }
     }
   }
 })

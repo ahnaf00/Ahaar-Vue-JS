@@ -13,6 +13,7 @@ import AdminDashboardView from "../views/admin/AdminDashboardView.vue";
 import AdminLayout from "../layouts/AdminLayout.vue";
 import AdminOrdersView from "../views/admin/AdminOrdersView.vue";
 import AdminReservationsView from "../views/admin/AdminReservationsView.vue";
+import AdminMenuView from "../views/admin/AdminMenuView.vue";
 const routes = [
   // ── Public Routes (Wrapped in Layout) ──────────────────────
   {
@@ -58,12 +59,12 @@ const routes = [
         component: AdminReservationsView,
         meta: { title: "Reservations" },
       },
-    //   {
-    //     path: "menu",
-    //     name: "admin-menu",
-    //     component: AdminMenuView,
-    //     meta: { title: "Menu Manager" },
-    //   },
+      {
+        path: "menu",
+        name: "admin-menu",
+        component: AdminMenuView,
+        meta: { title: "Menu Manager" },
+      },
     //   {
     //     path: "impact",
     //     name: "admin-impact",

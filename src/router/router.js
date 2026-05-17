@@ -11,6 +11,7 @@ import ReservationsView from "../views/public/ReservationsView.vue";
 import ContactView from "../views/public/ContactView.vue";
 import AdminDashboardView from "../views/admin/AdminDashboardView.vue";
 import AdminLayout from "../layouts/AdminLayout.vue";
+import AdminOrdersView from "../views/admin/AdminOrdersView.vue";
 const routes = [
   // ── Public Routes (Wrapped in Layout) ──────────────────────
   {
@@ -44,12 +45,12 @@ const routes = [
         component: AdminDashboardView,
         meta: { title: "Dashboard" },
       },
-    //   {
-    //     path: "orders",
-    //     name: "admin-orders",
-    //     component: AdminOrdersView,
-    //     meta: { title: "Orders" },
-    //   },
+      {
+        path: "orders",
+        name: "admin-orders",
+        component: AdminOrdersView,
+        meta: { title: "Orders" },
+      },
     //   {
     //     path: "reservations",
     //     name: "admin-reservations",
